@@ -26,3 +26,10 @@ Evidence Included:
 - Backend Docker image in ECR (ecr-backend-image.png)
 - Backend CD pipeline verification steps, in-workflow (backend-cd-verification-1.png, -2.png, -3.png)
 - Frontend CD pipeline verification steps, in-workflow (frontend-cd-verification-1.png, -2.png, -3.png)
+Update: The `|| true` fallback was removed from the kubectl rollout status
+checks in both frontend-cd.yaml and backend-cd.yaml, so a failed rollout
+now correctly fails the pipeline.
+
+Updated successful CD runs (post-fix, rollout check enforced):
+- Frontend CD: <paste your new frontend run URL here>
+- Backend CD:  <paste your new backend run URL here>
