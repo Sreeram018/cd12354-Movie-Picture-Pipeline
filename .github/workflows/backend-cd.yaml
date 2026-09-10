@@ -142,7 +142,7 @@ jobs:
 
       - name: Verify Kubernetes deployment
         run: |
-          kubectl rollout status deployment/backend --timeout=180s || true
+          kubectl rollout status deployment/backend --timeout=180s
           echo "----- Logging - kubectl get all ---- "
           kubectl get all
           echo "----- Logging - kubectl describe deploy ----- "
