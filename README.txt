@@ -30,6 +30,4 @@ Update: The `|| true` fallback was removed from the kubectl rollout status
 checks in both frontend-cd.yaml and backend-cd.yaml, so a failed rollout
 now correctly fails the pipeline.
 
-Updated successful CD runs (post-fix, rollout check enforced):
-- Frontend CD: <paste your new frontend run URL here>
-- Backend CD:  <paste your new backend run URL here>
+
